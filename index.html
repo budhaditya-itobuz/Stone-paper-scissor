@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissor</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 id="status">waiting...</h2>
+            <h2>Score Board</h2>
+            <div class="score">
+                <h2>User: <span id="user-score">0</span></h2>
+                <h2>Computer: <span id="computer-score">0</span></h2>
+            </div>
+        </div>
+        <div id="playground" class="content">
+            <div class="user">
+                <h3>You</h3>
+                <dotlottie-player class="icon-user" id="stone"
+                    src="https://lottie.host/5ad00333-4181-4d5c-9153-05a8e1c25d62/M8Z3KOWi0F.json"
+                    background="transparent" speed="0.5" style="width: 150px; height: 150px;" loop
+                    autoplay></dotlottie-player>
+                <dotlottie-player class="icon-user" id="paper"
+                    src="https://lottie.host/f533c969-a4f0-4aa2-8d4f-fe346e919a83/X6aFp0Oq3Y.json"
+                    background="transparent" speed="0.5" style="width: 150px; height: 150px;" loop
+                    autoplay></dotlottie-player>
+                <dotlottie-player class="icon-user" id="scissor"
+                    src="https://lottie.host/4847dd15-cd33-42f4-b62a-a67819ca847b/HqzegvKRO6.json"
+                    background="transparent" speed="0.5" style="width: 150px; height: 150px" loop
+                    autoplay></dotlottie-player>
+            </div>
+            <div class="computer">
+                <h3>Computer</h3>
+                <dotlottie-player class="icon" id="stone-computer"
+                    src="https://lottie.host/5ad00333-4181-4d5c-9153-05a8e1c25d62/M8Z3KOWi0F.json"
+                    background="transparent" speed="0.5" style="width: 150px; height: 150px;" loop
+                    autoplay></dotlottie-player>
+                <dotlottie-player class="icon" id="paper-computer"
+                    src="https://lottie.host/f533c969-a4f0-4aa2-8d4f-fe346e919a83/X6aFp0Oq3Y.json"
+                    background="transparent" speed="0.5" style="width: 150px; height: 150px;" loop
+                    autoplay></dotlottie-player>
+                <dotlottie-player class="icon" id="scissor-computer"
+                    src="https://lottie.host/4847dd15-cd33-42f4-b62a-a67819ca847b/HqzegvKRO6.json"
+                    background="transparent" speed="0.5" style="width: 150px; height: 150px" loop
+                    autoplay></dotlottie-player>
+            </div>
+        </div>
+    </div>
+    <script src="index.js">
+
+    </script>
+</body>
+
+</html>
