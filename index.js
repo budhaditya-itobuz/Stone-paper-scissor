@@ -6,9 +6,9 @@ const userScore = document.getElementById("user-score");
 const computerScore = document.getElementById("computer-score");
 
 function addScore(name) {
-    if (name === "user") currentStatus.innerText = "Hurray! you Won 😃";
-    else if (name === "draw") currentStatus.innerText = "OOPs draw! 🤦‍♀️";
-    else currentStatus.innerText = "You Lost😢";
+    if (name === "user") currentStatus.innerHTML = "Hurray! you Won &#128515";
+    else if (name === "draw") currentStatus.innerHTML = "OOPs draw! &#129318";
+    else currentStatus.innerHTML = "You Lost &#128546";
 
     let score = JSON.parse(localStorage.getItem("score"));
     score[name] = score[name] + 1;
@@ -25,8 +25,8 @@ const check = () => {
         const h2 = document.createElement("h2");
         button.innerText = "restart";
         button.setAttribute("onclick", "location.reload()");
-        if (score.user === 3) h2.innerText = "Hurray you have won the match!😃";
-        else h2.innerText = "You Lost the match😢";
+        if (score.user === 3) h2.innerText = "Hurray you have won the match! &#128515";
+        else h2.innerText = "You Lost the match &#128546";
 
         setTimeout(() => {
             playground.innerHTML = "";
