@@ -25,8 +25,8 @@ const check = () => {
         const h2 = document.createElement("h2");
         button.innerText = "restart";
         button.setAttribute("onclick", "location.reload()");
-        if (score.user === 3) h2.innerText = "Hurray you have won the match! &#128515";
-        else h2.innerText = "You Lost the match &#128546";
+        if (score.user === 3) h2.innerHTML = "Hurray you have won the match! &#128515";
+        else h2.innerHTML = "You Lost the match &#128546";
 
         setTimeout(() => {
             playground.innerHTML = "";
